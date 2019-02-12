@@ -6,7 +6,7 @@
 #2.2
 # talet = float(input("skriv ett float-tal: ")) 
 # print(talet)
-# talet2 = int(talet) #gör om talet till int, vilken tvingar det att avrundas
+# talet2 = round(talet) #gör om talet till int, vilken tvingar det att avrundas
 # print(talet2)
 
 #2.3
@@ -27,13 +27,18 @@
 Vanlig2=2*int(input("Hur många vill ha två vanliga korvar?"))
 Vanlig3=3*int(input("Hur många vill ha tre vanliga korvar?"))
 Vegan2=2*int(input("Hur många vill ha två veganska korvar?"))
-Vegang3=3*int(input("Hur många vill ha tre veganska korvar?"))
+Vegan3=3*int(input("Hur många vill ha tre veganska korvar?"))
 Vanlig_korv= Vanlig2+Vanlig3
-Vegan_korv= Vegan2+Vegang3
+Vegan_korv= Vegan2+Vegan3
 Antal_paket1= Vanlig_korv/8
 Antal_paket2= Vegan_korv/4
-Antal_elever=Vanlig2/2+Vanlig3/3+Vegan2/2+Vegang3/3
-print(str(Antal_paket1) + " paket vanlig korv behöver köpas in")
-print(str(Antal_paket2)+" paket vegansk korv behöver köpas in")
+Vanlig=round(Antal_paket1)
+Vegan=round(Antal_paket2)
+Antal_elever=Vanlig2/2+Vanlig3/3+Vegan2/2+Vegan3/3
+
+print(str(Vanlig) + " paket vanlig korv behöver köpas in")
+print(str(Vegan)+" paket vegansk korv behöver köpas in")
 print(str(Antal_elever)+" stycken drickor behöver köpas in")
-#Man skulle kunna avrunda men risken är att det gör att talet blir för litet om det avrundas neråt, därför skippade jag det
+
+Pris=Vanlig*20.95+Vegan*34.95+Antal_elever*13.95
+print("Totala kostnaden blir " + str(Pris) + " kr")
