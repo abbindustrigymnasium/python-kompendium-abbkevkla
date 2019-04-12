@@ -49,6 +49,3 @@ for artists in response_dictionary["artists"]: #går igenom alla artister igen
         response2 = t.json()
         for facts in response2["artist"]: #vi går igenom faktan i API'n
             print(facts+": " + str(response2["artist"][facts])) #vi skriver ut faktans titel och dess innehåll
-    else: 
-        print("nah boi") #om man har valt något som inte finns skrivs ett medelande ut och loopen bryts
-        break
