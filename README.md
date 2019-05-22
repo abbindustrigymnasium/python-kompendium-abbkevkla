@@ -9,7 +9,8 @@ Pro Tip: För att ta bort kommentarerna snabbt kan man markera allt man vill avk
 I nästa mapp finns mitt python projekt. Syften med projektet var att läsa in betyg från en excelfil och sedan skapa ett worddokument med 
 alla kunskapskrav och mål. De betyg som eleven uppnåt ska markeras ut med fet text och i kunskapskraven ska de även highlightas gröna. 
 Varje elev får var sitt dokument och dokumenten sparas i mappen "Students". 
-I mappen finns själva koden, skriven i python. Man kan även hitta excelfilen som alla värden finns i och Pseudokoden. Jag vill dock varna 
+I mappen finns själva koden, skriven i python med hjälp av bilbiotektet python-docx, som låter oss skapa word dokument med hjälp av python. 
+Man kan även hitta excelfilen som alla värden finns i och Pseudokoden. Jag vill dock varna 
 för att Pseudokoden inte stämmer så bra med den slutgiltiga koden, då jag inte helt visste hur python-docx fungerade och insåg halvvägs 
 igenom projektet att jag var tvungen att göra annorlunda än vad jag tänkt. 
 Slutligen finns det en bild på en volvobåt, mest för att jag tyckte den var fin. 
