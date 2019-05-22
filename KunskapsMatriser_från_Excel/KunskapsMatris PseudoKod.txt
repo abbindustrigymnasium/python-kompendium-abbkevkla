@@ -1,0 +1,41 @@
+Import necessary libraries
+
+document = Document()
+
+fun_info = read page 4 and add to top of ducument
+add logo in top left corner (maybe?)
+
+central_content = read Column 1 of page 1
+add central_conten to document as bullet points
+
+for goals in page 3
+    for levels in goals
+        add goal to proficiencies
+    
+create table for proficiencies
+add proficiencies to Document table
+
+#We now have the base with all the goals and text
+#Next we have to add the individual students results and save that, one file per student
+
+for students in row 1, range (2,30):
+    create an individual document from the base document
+    #read results from page 1
+    results =[ sheet.cell(row=students, column=i).value for i in range(1,sheet.max_row)]
+    
+    for i in results:
+        if i == godkänt:
+            mark goal green on document
+    
+    #read results from page 2
+    goals =[ sheet.cell(row=students, column=i).value for i in range(1,sheet.max_row)]
+    
+    for i in goals:
+        if i == E:
+            mark proficiency column 1 green 
+        elif i == C:
+            mark proficiency column 2 green 
+        elif i == A:
+            mark proficiency column 3 green 
+    
+    create document named after student and add to folder
