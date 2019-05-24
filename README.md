@@ -1,5 +1,5 @@
-Python Programmering Ay lmao 
-Av Kevin i 180s
+# Python Programmering Ay lmao 
+## Av Kevin i 180s
 
 I mappen kallad kompendiet ligger uppgifterna från kompendiet. Jag har sorterat det på så vis att för varje kapitel finns det en fil.
 I filen har jag gjort de olika uppgifterna. När jag har har utfört uppgiften har jag kommenterat bort den för att undvika att den påverkar
